@@ -27,15 +27,6 @@ export default function NavbarComponents({ setSelectedCategory }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // const categories = [
-  //   { path: "/lifestyle", title: "Lifestyle" },
-  //   { path: "/technology", title: "Technology" },
-  //   { path: "/education", title: "Education" },
-  //   { path: "/pop-culture", title: "Pop Culture" },
-  //   { path: "/personal-finance", title: "Personal Finance & Budgeting" },
-  //   { path: "/programming", title: "Programming Languages" },
-  //   { path: "/cooking", title: "Cooking Skills & Techniques" },
-  // ];
 
   // For Login Form
 
@@ -106,7 +97,7 @@ export default function NavbarComponents({ setSelectedCategory }) {
             <div className="h-full flex items-center hover:cursor-pointer">
               <NavLink to="/">
                 <img
-                  src="src/img/logo.png"
+                  src="/images/logo/logo.png"
                   alt="Logo"
                   className="h-30 object-contain"
                 />

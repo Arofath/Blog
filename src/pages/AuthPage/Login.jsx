@@ -5,8 +5,8 @@ import { NavLink } from "react-router";
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [username] = useState("");
+  const [password] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -151,7 +151,8 @@ export default function Login() {
           <div className="mt-6 text-center">
             <p className="text-gray-600">
               Don't have an Account ?{" "}
-              <NavLink to="/register"
+              <NavLink
+                to="/register"
                 className="text-[#A27B5C] hover:underline font-medium"
               >
                 Register
@@ -166,7 +167,7 @@ export default function Login() {
             <div className="flex justify-center mb-6">
               <div className="relative">
                 <img
-                  src="src\img\logo.png"
+                  src="/images/logo/logo.png"
                   alt="ReadKH Notebooks"
                   className="mx-20"
                 />
