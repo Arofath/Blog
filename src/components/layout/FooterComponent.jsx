@@ -17,7 +17,7 @@ export default function FooterComponents() {
 
   return (
     <footer className="bg-white">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
         {/* Logo Section */}
         <div className="flex flex-col items-start md:items-end">
           <img
@@ -28,7 +28,7 @@ export default function FooterComponents() {
         </div>
 
         {/* Quick Links & Categories - Responsive for Mobile */}
-        <div className="w-full lg:py-20">
+        <div className="w-full lg:py-20 items-start">
           <div className="flex justify-between space-x-10 max-md:hidden">
             {/* First Column - Quick Links */}
             <div>
@@ -194,14 +194,14 @@ export default function FooterComponents() {
         </div>
 
         {/* Contact Us */}
-        <div className=" lg:my-20 ml-20 md:ml-0">
+        <div className="lg:my-20 ml-0">
           <h3 className="font-semibold text-gray-900 mb-3">Contact Us</h3>
           <p className="text-gray-600">ReadKh@gmail.com</p>
           <p className="text-gray-600">0 123 456 789</p>
           <p className="text-gray-600">ReadKh.com</p>
 
           {/* Social Icons */}
-          <div className="flex justify-center md:justify-start space-x-4 mt-4">
+          <div className="flex justify-start space-x-4 mt-4">
             {[
               FaFacebookSquare,
               FaInstagram,
